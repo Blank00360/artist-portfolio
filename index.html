@@ -36,16 +36,33 @@
   </section>
 
   <!-- Music Section -->
-  <section id="music">
-    <h2>Featured Music</h2>
-    <div class="music-embeds">
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5ya2gsaIhTkAuWYEMB0nw5" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media"></iframe>
-      
-      <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/123456789"></iframe>
-      
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </section>
+ <!-- Music Section -->
+<section id="music">
+  <h2>Featured Music</h2>
+  
+  <!-- Embedded Platforms -->
+  <div class="music-embeds">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5ya2gsaIhTkAuWYEMB0nw5" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media"></iframe>
+    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/123456789"></iframe>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <!-- Custom Music Player -->
+  <div class="music-player">
+    <h3>My Tracks</h3>
+    <audio id="audio-player" controls>
+      <source src="music/track1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <ul id="playlist">
+      <li data-src="music/track1.mp3">🎵 Track 1 - Title</li>
+      <li data-src="music/track2.mp3">🎵 Track 2 - Title</li>
+      <li data-src="music/track3.mp3">🎵 Track 3 - Title</li>
+    </ul>
+  </div>
+</section>
+
 
   <!-- Gallery Section -->
   <section id="gallery">
